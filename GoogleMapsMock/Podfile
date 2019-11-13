@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'GoogleMapsMock' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GoogleMapsMock
+	pod 'GoogleMaps'
+	pod 'GooglePlaces'
+
+  target 'GoogleMapsMockTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'GoogleMapsMockUITests' do
+    # Pods for testing
+  end
+
+end
